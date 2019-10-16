@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+/* Accueil app */
+.accueil .btn {
+    
+background-color: royalblue;
+margin: 15px;
+padding: 5px;
+display: block;
+width: 80px;
+
+};
+
+h1 {
+    text-align:center;
+
+}
+
+html {
+    width: 100%;
+
+}
+
+/* Media queries */
+
+@media screen and (min-width: 900px) {
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
