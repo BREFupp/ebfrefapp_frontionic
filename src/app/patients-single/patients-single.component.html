@@ -4,14 +4,12 @@
     <header>
         <img src="" alt="thème visuel">
     </header>
-    <section>
-        <h1>Titre</h1>
-        <span>Auteur :</span>
-        <span style="display:inline">Publié le :</span>
+    <section *ngFor="let article of articles">
+        <h1>{{article.title}}</h1>
+        <span>Auteur :{{article.author}}</span>
+        <span style="display:inline">Publié le :{{article.date |date("m/d/Y")}}</span>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            A, dignissimos earum, accusamus, nostrum expedita culpa ipsam voluptatum reprehenderit tempore itaque molestiae eveniet placeat consequuntur quis dolores animi! 
-            Doloremque, hic vitae!
+            {{article.content}}
         </p>
         <p>Partagez via</p>
         <i class="fas fa-facebook-messenger">Messenger</i>
